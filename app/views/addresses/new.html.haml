@@ -1,6 +1,5 @@
 %h2 STEP 3
 = form_for @address do |f|
-  -# = render "profiles/shared/error_messages", resource: resource
   .field
     = f.label "郵便番号"
     = f.text_field :postcode, autofocus: true, autocomplete: "postcode"

@@ -1,6 +1,5 @@
 %h2 STEP 2
 = form_for @profile do |f|
-  -# = render "profiles/shared/error_messages", resource: resource
   .field
     = f.label "お名前(全角)"
     = f.text_field :last_name, autofocus: true, autocomplete: "last_name"

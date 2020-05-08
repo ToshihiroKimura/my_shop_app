@@ -1,6 +1,5 @@
 %h2 クレジットカード登録
 = form_tag(pay_card_index_path, method: :post, id: 'charge-form',  name: "inputForm") do
-  -# = render "profiles/shared/error_messages", resource: resource
   .field
     = text_field_tag "number", "", class: "number", placeholder: "半角数字のみ" ,maxlength: "16", type: "text", id: "card_number"
   .field
