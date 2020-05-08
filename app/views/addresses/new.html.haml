@@ -1,0 +1,20 @@
+%h2 STEP 3
+= form_for @address do |f|
+  -# = render "profiles/shared/error_messages", resource: resource
+  .field
+    = f.label "郵便番号"
+    = f.text_field :postcode, autofocus: true, autocomplete: "postcode"
+  .field
+    = f.label "都道府県"
+    = f.text_field :prefecture, autofocus: true, autocomplete: "prefecture"
+  .field
+    = f.label "市区町村"
+    = f.text_field :city, autofocus: true, autocomplete: "city"
+  .field
+    = f.label "番地"
+    = f.text_field :block, autofocus: true, autocomplete: "block"
+  .field
+    = f.label "建物名"
+    = f.text_field :building, autofocus: true, autocomplete: "building"
+  .actions
+    = f.submit "次へ"
