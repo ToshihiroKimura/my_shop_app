@@ -5,4 +5,5 @@ Rails.application.routes.draw do
   resources :addresses
   resources :cards
   resources :items
+  resources :images
 end
