@@ -1,0 +1,10 @@
+@import "colors";
+
+html, body{
+  background-color: $gray;
+}
+
+@import "modules/header";
+@import "modules/footer";
+@import "modules/background";
+@import "modules/reason";

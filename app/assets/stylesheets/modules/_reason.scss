@@ -1,0 +1,21 @@
+.reason{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+  background-color: #fff;
+  
+  .box{
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    box-sizing: border-box;
+    margin: 0 auto;
+    padding-top: 2%;
+    padding-bottom: 5%;
+    
+    .pict{
+      width: 80%;
+      margin: 0 auto;
+    }
+  }
+}
