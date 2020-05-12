@@ -14,7 +14,7 @@ ActiveRecord::Schema.define(version: 2020_05_08_175349) do
 
   create_table "addresses", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
     t.integer "postcode"
-    t.integer "prefecture"
+    t.bigint "prefecture_id"
     t.string "city"
     t.string "block"
     t.string "building"
@@ -22,6 +22,7 @@ ActiveRecord::Schema.define(version: 2020_05_08_175349) do
     t.bigint "profile_id", null: false
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.index ["prefecture_id"], name: "index_addresses_on_prefecture_id"
     t.index ["profile_id"], name: "index_addresses_on_profile_id"
     t.index ["user_id"], name: "index_addresses_on_user_id"
   end
@@ -67,7 +68,6 @@ ActiveRecord::Schema.define(version: 2020_05_08_175349) do
   end
 
   create_table "profiles", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
-    t.string "nickname", null: false
     t.string "last_name", null: false
     t.string "first_name", null: false
     t.string "last_name_kana", null: false
@@ -81,7 +81,7 @@ ActiveRecord::Schema.define(version: 2020_05_08_175349) do
   end
 
   create_table "users", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
-    t.string "nickname", null: false
+    t.string "nickname"
     t.string "email", default: "", null: false
     t.string "encrypted_password", default: "", null: false
     t.string "reset_password_token"

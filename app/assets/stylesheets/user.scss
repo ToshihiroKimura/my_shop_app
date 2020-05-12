@@ -1,0 +1,31 @@
+.main{
+  margin: 0 auto;
+  width: 700px;
+
+  .title{
+    height: 80px;
+    line-height: 80px;
+    text-align: center;
+    padding: 0 180px;
+    background-color: white;
+    margin-bottom: 2px;
+  }
+
+  .input_form{
+    padding: 30px 180px;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+
+    .field{
+      margin-bottom: 30px;
+    }
+  }
+
+  .links{
+    height: 80px;
+    padding: 0 180px;
+    background-color: white;
+    text-align: center;
+  }
+}

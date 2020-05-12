@@ -1,0 +1,20 @@
+.header1
+  .top
+    = image_tag 'logo/logo.png', class: 'logo'
+    = text_field_tag 'name', '', class: 'search_box', placeholder: 'キーワードから探す'
+  .nave_bar
+    %ur.list
+      %li.menu カテゴリー
+      %li.menu ブランド
+
+    %ur.list
+      - if user_signed_in?
+        %li.menu
+          =link_to "マイページ", new_user_registration_path
+        %li.menu
+          =link_to "ログアウト", destroy_user_session_path, method: :delete
+      - else
+        %li.menu
+          =link_to "ログイン", new_user_session_path
+        %li.menu
+          =link_to "新規会員登録", new_user_registration_path

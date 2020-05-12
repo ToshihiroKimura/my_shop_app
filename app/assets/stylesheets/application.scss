@@ -1,10 +1,9 @@
 @import "colors";
-
-html, body{
-  background-color: $gray;
-}
-
+@import "shared/body";
+@import "shared/input";
+@import "shared/btn";
 @import "modules/header";
 @import "modules/footer";
 @import "modules/background";
 @import "modules/reason";
+@import "user";
