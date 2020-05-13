@@ -1,0 +1,32 @@
+.title
+  %h2 STEP 1
+.input_form
+  = form_for(resource, as: resource_name, url: registration_path(resource_name), class: "input_form") do |f|
+    .field
+      = f.label "ユーザーネーム"
+      %br/
+      = f.text_field :nickname, class: "inputbox-full", autofocus: true, autocomplete: "nickname"
+      %br/
+      ユーザーネームを入力してください
+    .field
+      = f.label "メールアドレス"
+      = f.email_field :email, class: "inputbox-full", autofocus: true, autocomplete: "email"
+      %br/
+      メールアドレスを入力してください
+    .field
+      = f.label "パスワード"
+      - if @minimum_password_length
+        %em
+          (#{@minimum_password_length}文字以上)
+      = f.password_field :password, class: "inputbox-full", autocomplete: "new-password"
+      %br/
+      パスワードを入力してください
+    .field
+      = f.label "パスワード(再入力)"
+      = f.password_field :password_confirmation, class: "inputbox-full", autocomplete: "new-password"
+      %br/
+      パスワードを再入力してください
+    .actions
+      = f.submit "次へ", class: "btn red"
+.links
+  = render "devise/shared/links"

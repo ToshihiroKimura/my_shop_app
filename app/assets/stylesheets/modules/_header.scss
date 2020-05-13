@@ -1,0 +1,45 @@
+.header1{
+  // position: fixed;
+  top: 0;
+  width: 100%;
+  padding: 10px 15%;
+  .top{
+    display: flex;
+    justify-content: space-between;
+    margin: 15px 0;
+
+    .logo{
+      height: 15%;
+      width: 15%;
+    }    
+  }
+
+
+  .nave_bar{
+    display: flex;
+    justify-content: space-between;
+
+    .list{
+      height: 48px;
+      line-height: 48px;
+      display: flex;
+      list-style: none;
+      
+      .menu{
+        margin: 0 20px;
+      }
+    }
+  }
+}
+
+.header2{
+  margin: 0 auto;
+  width: 700px;
+  text-align: center;
+
+  .logo{
+    height: 25%;
+    width: 25%;
+    margin-right: 30px;
+  }
+}

@@ -1,0 +1,55 @@
+.search_box{
+  width: 80%;
+  height: 30px;
+}
+
+.inputbox-full{
+  width: 100%;
+  height: 48px;
+  line-height: 48px;
+  font-size: 14px;
+  padding: 0 20px;
+
+}
+
+#address_prefecture, #item_prefecture{
+-webkit-appearance: none;
+border-radius: 0px;
+border-color: gainsboro;
+background-color: $white;
+}
+
+.inputbox-half{
+  width: 47%;
+  margin: 0 1%;
+  height: 48px;
+  line-height: 48px;
+  font-size: 14px;
+  padding: 0 20px;
+}
+
+
+#profile_birthday_1i{
+  width: auto;
+  height: 48px;
+  line-height: 48px;
+  font-size: 20px;
+  padding: 0 20px 0 30px;
+  -webkit-appearance: none;
+  border-radius: 0px;
+  border-color: gainsboro;
+  background-color: $white;
+  text-align: right;
+}
+
+#profile_birthday_2i, #profile_birthday_3i{
+  width: auto;
+  height: 48px;
+  line-height: 48px;
+  font-size: 20px;
+  padding: 0 20px 0 30px;
+  -webkit-appearance: none;
+  border-radius: 0px;
+  border-color: gainsboro;
+  background-color: $white;
+}
