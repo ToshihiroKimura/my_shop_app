@@ -11,11 +11,12 @@
   padding: 0 20px;
 
 }
-#address_prefecture{
+
+#address_prefecture, #item_prefecture{
 -webkit-appearance: none;
 border-radius: 0px;
 border-color: gainsboro;
-background-color: #fff;
+background-color: $white;
 }
 
 .inputbox-half{
@@ -37,7 +38,7 @@ background-color: #fff;
   -webkit-appearance: none;
   border-radius: 0px;
   border-color: gainsboro;
-  background-color: #fff;
+  background-color: $white;
   text-align: right;
 }
 
@@ -50,5 +51,5 @@ background-color: #fff;
   -webkit-appearance: none;
   border-radius: 0px;
   border-color: gainsboro;
-  background-color: #fff;
+  background-color: $white;
 }

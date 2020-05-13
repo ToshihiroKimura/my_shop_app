@@ -1,26 +1,4 @@
-.resitration
-  = render "modules/header2"
-  .main
-    .title
-      %h2 STEP 3
-    .input_form
-      = form_for @address do |f|
-        .field
-          = f.label "郵便番号"
-          = f.text_field :postcode, class: "inputbox-full", autofocus: true, autocomplete: "postcode"
-        .field
-          = f.label "都道府県"
-          = f.select :prefecture, Prefecture.all.map { |pre| [pre.name, pre.id] },{include_blank: ""}, class: "inputbox-full", autofocus: true
-        .field
-          = f.label "市区町村"
-          = f.text_field :city, class: "inputbox-full", autofocus: true, autocomplete: "city"
-        .field
-          = f.label "番地"
-          = f.text_field :block, class: "inputbox-full", autofocus: true, autocomplete: "block"
-        .field
-          = f.label "建物名"
-          = f.text_field :building, class: "inputbox-full", autofocus: true, autocomplete: "building"
-        .actions
-          = f.submit "次へ",  class: "btn"
-  .bottom
-    = render "modules/footer2"
+= render "modules/header2"
+.main
+  = render "new"
+= render "modules/footer2"

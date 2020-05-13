@@ -59,12 +59,13 @@ ActiveRecord::Schema.define(version: 2020_05_08_175349) do
     t.bigint "category_id", null: false
     t.string "item_status", null: false
     t.string "delivery_charge", null: false
-    t.integer "delivery_area", null: false
+    t.bigint "prefecture_id", null: false
     t.string "delivery_days", null: false
     t.integer "price", null: false
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.index ["category_id"], name: "index_items_on_category_id"
+    t.index ["prefecture_id"], name: "index_items_on_prefecture_id"
   end
 
   create_table "profiles", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
